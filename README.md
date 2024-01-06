@@ -45,7 +45,7 @@ JavaScript using Jinja and jQuery.
     - Jinja
     - jQuery
     - Reportlab
-    - [Chess GIF](https://pypi.org/project/chess-gif)
+    - [pgn2gif](https://github.com/dn1z/pgn2gif)
 
 
 ## Example Input
