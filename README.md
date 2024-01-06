@@ -36,11 +36,11 @@ Please note that the project is still in a pre-alpha state so it should be used 
         * settings.py
 
 * Pgnmoxi has these dependencies:
-    - (Python Chess)[https://pypi.org/project/chess]
+    - [Python Chess](https://pypi.org/project/chess)
     - Jinja
     - jQuery
     - Reportlab
-    - (Chess GIF)[https://pypi.org/project/chess-gif]
+    - [Chess GIF](https://pypi.org/project/chess-gif)
 
 
 ## Example Input
