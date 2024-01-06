@@ -117,7 +117,7 @@ Please note that the project is still in a pre-alpha state so it should be used 
 ## Copyright and License
 
 Pgnmoxi is free software: you can redistribute it and/or modify it under the terms
-of the [GNU General Public License](https://github.com/patrickwayodi/pgnmoxi/blob/gh-pages/LICENSE)
+of the [GNU General Public License](https://github.com/patrickwayodi/pgnmoxi/blob/main/LICENSE)
 license as published by the Free Software Foundation, either version 3 of the License,
 or (at your option) any later version.
 
