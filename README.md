@@ -5,6 +5,8 @@ Pgnmoxi
 Pgnmoxi converts chess game PGN files to other formats. Pgnmoxi is written in Python and
 JavaScript using Jinja and jQuery.
 
+Please note that the project is still in a pre-alpha state so it should be used with care.
+
 
 ## Overview
 
@@ -27,7 +29,7 @@ JavaScript using Jinja and jQuery.
 
 * Pgnmoxi has these components:
     - Converting PGN to other formats:
-        * pgn2gif.py, pgn2html.py, e.t.c.
+        * pgn2gif.py, pgn2html.py, etc
     - Creating lists and indexes:
         - collection.py, tournament.py
     = Settings and configuration:
