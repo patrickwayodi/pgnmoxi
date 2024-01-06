@@ -32,7 +32,7 @@ Please note that the project is still in a pre-alpha state so it should be used 
         * pgn2gif.py, pgn2html.py, etc
     - Creating lists and indexes:
         - collection.py, tournament.py
-    = Settings and configuration:
+    - Settings and configuration:
         * settings.py
 
 * Pgnmoxi has these dependencies:
