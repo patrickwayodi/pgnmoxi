@@ -5,8 +5,6 @@ Pgnmoxi
 Pgnmoxi converts chess game PGN files to other formats. Pgnmoxi is written in Python and
 JavaScript using Jinja and jQuery.
 
-Please note that the project is still in a pre-alpha state so it should be used with care.
-
 
 ## Overview
 
@@ -27,13 +25,20 @@ Please note that the project is still in a pre-alpha state so it should be used 
     - Printing:
         * PDF
 
-* Pgnmoxi has these components:
-    - Converting PGN to other formats:
-        * pgn2gif.py, pgn2html.py, etc
+* Pgnmoxi has these main components:
+    - Converting PGN to text based formats:
+        * pgn2json.py, pgn2html.py, pgn2xml.py, pgn2svg.py
+    - Converting PGN to binary formats:
+        * pgn2gif.py, pgn2video.py, pgn2png.py, pgn2pdf.py
     - Creating lists and indexes:
-        - collection.py, tournament.py
+        * collection.py, tournament.py
+    - Generating a website:
+        * generate_website.py
     - Settings and configuration:
         * settings.py
+    - Templates:
+        * src/templates
+        * src/templates/game/.../index.html
 
 * Pgnmoxi has these dependencies:
     - [Python Chess](https://pypi.org/project/chess)
@@ -62,12 +67,12 @@ Please note that the project is still in a pre-alpha state so it should be used 
 '''javascript
 {
     "event": "Example Chess Championship",
-    "date": "2023.05.19",
-    "white": "Jane Doe",
-    "black": "Richard Roe",
-    "result": "1-0",
-    "moves": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1",
-    "plies”: [“e4","e5","Nf3","Nc6","Bb5","a6","Ba4","Nf6","Be7","Re1"]
+    "date":"2023.05.19",
+    "white":"Jane Doe",
+    "black":"Richard Roe",
+    "result":"1-0",
+    "moves":"1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1",
+    "plies”:[“e4","e5","Nf3","Nc6","Bb5","a6","Ba4","Nf6","Be7","Re1"]
 }
 '''
 
@@ -112,6 +117,19 @@ Please note that the project is still in a pre-alpha state so it should be used 
     }
 ]
 '''
+
+
+## Adjustable Limits
+
+* The default configutation has these adjustable limits in "settings.py":
+    - Processing of a maximum of 5 plies (2.5 moves) per game
+    - Processing of a maximum of 30 games per PGN file
+    - 2 MB per uploaded file
+    - Only 6 fields are processed: White, Black, Event, Date, Result, Moves
+    - 7 milliseconds pause during each operation
+    - 4 GB total storage space for all uploaded files
+
+* The purpose of the limits is to prevent the program from running amock.
 
 
 ## Copyright and License
